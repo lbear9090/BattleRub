@@ -1,6 +1,6 @@
 //
 //  GameSettings.h
-//  Rock It Robins
+//  BattleRub
 //
 //  Created by Lucky
 //

@@ -1,12 +1,13 @@
 //
 //  MainScene.cpp
-//  Rock It Robins
+//  BattleRub
 //
 //  Created by Lucky
 //
 //
 
 #include "MainScene.h"
+#include "HomeScene.h"
 #include "GameSettings.h"
 
 //#include "GameScene.h"
@@ -43,7 +44,7 @@ bool MainScene::init(){
     createLabel();
     createBtn();
     createPopup();
-    
+
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->onTouchBegan = CC_CALLBACK_2(MainScene::onTouchBegan, this);
     touchListener->onTouchMoved = CC_CALLBACK_2(MainScene::onTouchMoved, this);
@@ -58,15 +59,25 @@ bool MainScene::init(){
     auto dispatcher = Director::getInstance()->getEventDispatcher();
     dispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
+    m_sCircle = newSprite("circle", G_SWIDTH / 2, G_SHEIGHT / 2, this, 1, RATIO_O);
+    startGame();
+    return true;
+}
+
+void MainScene::startGame(){
     m_nTime = 10;
     m_nScore = 0;
-    m_sCircle = newSprite("circle", G_SWIDTH / 2, G_SHEIGHT / 2, this, 1, RATIO_O);
-    return true;
+    
+    m_lTime->setString("10");
+    m_lScore->setString("0");
+    
+    schedule(CC_SCHEDULE_SELECTOR(MainScene::onTimer), 1);
+    m_mMain->setVisible(false);
 }
 
 void MainScene::createBg()
 {
-    _streak = MotionStreak::create(1, 3, DISO(30), Color3B::YELLOW, "res/Image/circle.png");
+    _streak = MotionStreak::create(1, 3, DISO(30), Color3B::YELLOW, "res/Image/point1.png");
     addChild(_streak, 2);
     _streak->setFastMode(true);
 }
@@ -82,21 +93,42 @@ void MainScene::createLabel()
     Label *lScore = newLabel("SCORE:", "arial.ttf", DISO(60), G_SWIDTH / 2 + DISX(100), getY(200), this, 1, RATIO_1);
     lScore->setAnchorPoint(Vec2(0, 0.5));
     
-    m_lTime = newLabel("0", "arial.ttf", DISO(60), lTimer->getBoundingBox().size.width + getX(110), getY(200), this, 1, RATIO_1);
+    m_lTime = newLabel("10", "arial.ttf", DISO(60), lTimer->getBoundingBox().size.width + getX(110), getY(200), this, 1, RATIO_1);
     m_lTime->setAnchorPoint(Vec2(0, 0.5));
     
-    m_lScore = newLabel("0", "arial.ttf", DISO(60), lScore->getBoundingBox().size.width + G_SWIDTH / 2 + getX(110), getY(200), this, 1, RATIO_1);
+    m_lScore = newLabel(" ", "arial.ttf", DISO(60), lScore->getBoundingBox().size.width + G_SWIDTH / 2 + getX(110), getY(200), this, 1, RATIO_1);
     m_lScore->setAnchorPoint(Vec2(0, 0.5));
 }
 
 void MainScene::createBtn()
 {
+    MenuItemLabel* iRestart = newLabelButton("RESTART", "arial.ttf", DISO(70), getX(400), getY(1800), CC_CALLBACK_1(MainScene::onMenu, this), RATIO_O);
+    iRestart->setTag(100);
+    MenuItemLabel* iHome = newLabelButton("HOME", "arial.ttf", DISO(70), getX(880), getY(1800), CC_CALLBACK_1(MainScene::onMenu, this), RATIO_O);
+    iHome->setTag(101);
     
+    m_mMain = Menu::create(iRestart, iHome, NULL);
+    m_mMain->setPosition(0, 0);
+    addChild(m_mMain, 1);
 }
 
 void MainScene::onMenu(Ref *sender)
 {
-    
+    if(((MenuItemLabel *)sender)->getTag() == 100){
+        startGame();
+    }else if(((MenuItemLabel *)sender)->getTag() == 101){
+        Director::getInstance()->replaceScene(TransitionCrossFade::create(0.5f, HomeScene::createScene()));
+    }
+}
+
+void MainScene::onTimer(float dt){
+    if(m_nTime > 0){
+        m_nTime--;
+        m_lTime->setString(to_string(m_nTime));
+    }else{
+        m_mMain->setVisible(true);
+        unscheduleAllCallbacks();
+    }
 }
 
 bool MainScene::onTouchBegan(Touch *touch, Event *unused_event){
@@ -116,7 +148,7 @@ void MainScene::onTouchMoved(Touch *touch, Event *unused_event){
     if(touch->getLocation().distance(m_sCircle->getPosition()) < m_sCircle->getBoundingBox().size.width / 2){
         m_bTouchCircle = true;
     }else{
-        if(m_bTouchCircle){
+        if(m_bTouchCircle && m_nTime > 0){
             m_nScore++;
             m_lScore->setString(to_string(m_nScore));
             m_sCircle->setScale(G_SCALEO * 1.2 );

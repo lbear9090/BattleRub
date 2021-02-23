@@ -1,6 +1,6 @@
 //
 //  MainScene.h
-//  Rock It Robins
+//  BattleRub
 //
 //  Created by Lucky
 //
@@ -42,15 +42,13 @@ private:
     MotionStreak *_streak;
     Sprite *m_sCircle;
     bool m_bTouchCircle;
-    
-    bool m_bPlaying[6];
-    int m_nSoundId[6];
-    MenuItemLabel *m_iInfo[6];
-    
+        
     virtual bool onTouchBegan(Touch *touch, Event *unused_event);
     virtual void onTouchMoved(Touch *touch, Event *unused_event);
     virtual void onTouchEnded(Touch *touch, Event *unused_event);
     
+    void onTimer(float dt);
+    void startGame();
     /*virtual void onTouchesBegan(const std::vector<Touch*>& touches, Event *pEvent);
     virtual void onTouchesMoved(const std::vector<Touch*>& touches, Event *pEvent);
     virtual void onTouchesEnded(const std::vector<Touch*>& touches, Event *pEvent);*/

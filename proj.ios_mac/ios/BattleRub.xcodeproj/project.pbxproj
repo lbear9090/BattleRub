@@ -59,6 +59,13 @@
 		044B7F859BE54CA98959FF96 /* CCImage-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC129634F494490793F90868 /* CCImage-ios.mm */; };
 		04911C2E9C8B4BC1AF6C757D /* AudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93B4E54FC3AC4EC39DE67828 /* AudioEngine.cpp */; };
 		054F86F925E54CC000107C0F /* GameBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 054F86F825E54CC000107C0F /* GameBridge.mm */; };
+		054F870C25E58B9000107C0F /* point1.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F870925E58B9000107C0F /* point1.png */; };
+		054F870D25E58B9000107C0F /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F870A25E58B9000107C0F /* point.png */; };
+		054F870E25E58B9000107C0F /* point2.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F870B25E58B9000107C0F /* point2.png */; };
+		054F871E25E58C2600107C0F /* point.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870A25E58B9000107C0F /* point.png */; };
+		054F871F25E58C2600107C0F /* point1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870925E58B9000107C0F /* point1.png */; };
+		054F872025E58C2600107C0F /* point2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870B25E58B9000107C0F /* point2.png */; };
+		054F873225E58D9800107C0F /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 054F873025E58D9700107C0F /* HomeScene.cpp */; };
 		05901E8725CBA1A000E57504 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E8325CBA1A000E57504 /* AppDelegate.cpp */; };
 		05901E9C25CBA20100E57504 /* GameSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E9A25CBA20000E57504 /* GameSettings.cpp */; };
 		05901EBD25CBA22D00E57504 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901EBC25CBA22D00E57504 /* MainScene.cpp */; };
@@ -991,6 +998,9 @@
 			dstPath = res/Image;
 			dstSubfolderSpec = 7;
 			files = (
+				054F871E25E58C2600107C0F /* point.png in CopyFiles */,
+				054F871F25E58C2600107C0F /* point1.png in CopyFiles */,
+				054F872025E58C2600107C0F /* point2.png in CopyFiles */,
 				059C66D425CCF5F5007B2AA0 /* circle.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1030,6 +1040,11 @@
 		04F8804750E94A8F8A55AA67 /* CCArmatureDataManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCArmatureDataManager.cpp; path = "cocos2d/cocos/editor-support/cocostudio/CCArmatureDataManager.cpp"; sourceTree = SOURCE_ROOT; };
 		054F86F725E54CBF00107C0F /* GameBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBridge.h; sourceTree = "<group>"; };
 		054F86F825E54CC000107C0F /* GameBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameBridge.mm; sourceTree = "<group>"; };
+		054F870925E58B9000107C0F /* point1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point1.png; sourceTree = "<group>"; };
+		054F870A25E58B9000107C0F /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		054F870B25E58B9000107C0F /* point2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point2.png; sourceTree = "<group>"; };
+		054F873025E58D9700107C0F /* HomeScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HomeScene.cpp; sourceTree = "<group>"; };
+		054F873125E58D9700107C0F /* HomeScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
 		0571FD8C230B494F8AB6A132 /* CCActionCamera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCActionCamera.h; path = cocos2d/cocos/2d/CCActionCamera.h; sourceTree = SOURCE_ROOT; };
 		057252970E7741359CE886EF /* CCPUFlockCenteringAffector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUFlockCenteringAffector.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp; sourceTree = SOURCE_ROOT; };
 		05901E8325CBA1A000E57504 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -2365,6 +2380,8 @@
 		05901E8925CBA1B400E57504 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				054F873125E58D9700107C0F /* HomeScene.h */,
+				054F873025E58D9700107C0F /* HomeScene.cpp */,
 				05901EBB25CBA22C00E57504 /* MainScene.h */,
 				05901EBC25CBA22D00E57504 /* MainScene.cpp */,
 			);
@@ -2406,6 +2423,9 @@
 		059C66B325CCF5A6007B2AA0 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				054F870A25E58B9000107C0F /* point.png */,
+				054F870925E58B9000107C0F /* point1.png */,
+				054F870B25E58B9000107C0F /* point2.png */,
 				059C66B425CCF5A6007B2AA0 /* circle.png */,
 			);
 			path = Image;
@@ -4777,7 +4797,10 @@
 				CD1FF9221D794D9EAA77D08E /* LaunchScreen.storyboard in Resources */,
 				059C668325CCEADA007B2AA0 /* Marker Felt.ttf in Resources */,
 				F7B46034B48A4F12976173E8 /* LaunchScreenBackground.png in Resources */,
+				054F870E25E58B9000107C0F /* point2.png in Resources */,
 				059C66B525CCF5A6007B2AA0 /* circle.png in Resources */,
+				054F870C25E58B9000107C0F /* point1.png in Resources */,
+				054F870D25E58B9000107C0F /* point.png in Resources */,
 				059C668225CCEADA007B2AA0 /* arial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5447,6 +5470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054F873225E58D9800107C0F /* HomeScene.cpp in Sources */,
 				05901E8725CBA1A000E57504 /* AppDelegate.cpp in Sources */,
 				2DFA6A28AB0D4AAA90EEA75D /* AppController.mm in Sources */,
 				0C974195DF1C4A2EAEF1750E /* RootViewController.mm in Sources */,
