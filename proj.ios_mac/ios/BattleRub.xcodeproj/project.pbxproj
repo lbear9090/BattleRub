@@ -61,13 +61,13 @@
 		054F86F925E54CC000107C0F /* GameBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 054F86F825E54CC000107C0F /* GameBridge.mm */; };
 		054F870C25E58B9000107C0F /* point1.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F870925E58B9000107C0F /* point1.png */; };
 		054F870D25E58B9000107C0F /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F870A25E58B9000107C0F /* point.png */; };
-		054F870E25E58B9000107C0F /* point2.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F870B25E58B9000107C0F /* point2.png */; };
 		054F871E25E58C2600107C0F /* point.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870A25E58B9000107C0F /* point.png */; };
 		054F871F25E58C2600107C0F /* point1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870925E58B9000107C0F /* point1.png */; };
-		054F872025E58C2600107C0F /* point2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870B25E58B9000107C0F /* point2.png */; };
 		054F873225E58D9800107C0F /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 054F873025E58D9700107C0F /* HomeScene.cpp */; };
 		054F877025E5A7B900107C0F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F876F25E5A7B900107C0F /* GameKit.framework */; };
 		054F87A625E5CD3700107C0F /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F87A525E5CD3700107C0F /* GameCenterManager.m */; };
+		054F87D625E5F19600107C0F /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 054F87D525E5F19600107C0F /* coin.mp3 */; };
+		054F880525E5F2AD00107C0F /* coin.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F87D525E5F19600107C0F /* coin.mp3 */; };
 		05901E8725CBA1A000E57504 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E8325CBA1A000E57504 /* AppDelegate.cpp */; };
 		05901E9C25CBA20100E57504 /* GameSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E9A25CBA20000E57504 /* GameSettings.cpp */; };
 		05901EBD25CBA22D00E57504 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901EBC25CBA22D00E57504 /* MainScene.cpp */; };
@@ -209,7 +209,6 @@
 		3781C8F741374697BCB254C2 /* clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69AE0D18E8D74A26BD2D1BB7 /* clipper.cpp */; };
 		37EB6C6748F5401091894D81 /* CCController-apple.mm in Sources */ = {isa = PBXBuildFile; fileRef = ACE47728D9F94105A38803F3 /* CCController-apple.mm */; };
 		37EB7673AA464D4AB7A5D043 /* CCCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8ABD85DFEB45F0AD56A5A7 /* CCCamera.cpp */; };
-		37FEEDFEA2F84D5FB78ED9DD /* HelloWorld.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93F7A216377B44A6B229DE10 /* HelloWorld.png */; };
 		382EEAFE0BF34BA0B577F34D /* CCActionGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A287621FEE34240A8DBA568 /* CCActionGrid.cpp */; };
 		38E19089849D46598894B1F6 /* CCProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0371DE0302F34BE1836B0AF2 /* CCProperties.cpp */; };
 		394660ACCF3945E49AE91C53 /* CCRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CB10E0930184D9FB910C497 /* CCRenderer.cpp */; };
@@ -267,7 +266,6 @@
 		53C9729A99ED4789948BA9C5 /* CCPUForceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D146365A05D46DCB676E018 /* CCPUForceField.cpp */; };
 		53F23277E6F44CBEB8B8048B /* CCMotionStreak3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6485E04BCDB2401E9B48A853 /* CCMotionStreak3D.cpp */; };
 		54523004F3BE42B88E8097CB /* cocos2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92BD43A3B6BD4452AA356DA0 /* cocos2d.cpp */; };
-		558CC502A01141D19745DA75 /* CloseNormal.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D2C336EE7AC4AADA954FA8F /* CloseNormal.png */; };
 		55D211AF63534BC8ABD6E928 /* CCPUGeometryRotatorTranslator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A7495352C240E9ACC11D17 /* CCPUGeometryRotatorTranslator.cpp */; };
 		55DE19472CAA455A98171FD0 /* CCPUParticleSystem3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B169181D4F4F42B9A3AF79AD /* CCPUParticleSystem3D.cpp */; };
 		55FEC16CAE254960BC1589E8 /* CCRay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C2432118078414EB2205A52 /* CCRay.cpp */; };
@@ -369,7 +367,6 @@
 		7F72962C30C549E28B36A356 /* CCEAGLView-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA5873CF77DF4230A3F363B5 /* CCEAGLView-ios.mm */; };
 		803098E7BC4045FAB5A1BBE7 /* CocoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 506652AE21C24B46836BEA7D /* CocoLoader.cpp */; };
 		809B2BD7EC7E458A8189272F /* Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1913A3C570EE48F781554189 /* Vec3.cpp */; };
-		80B99776F5DA49C3A1A63B91 /* CloseSelected.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = D84F64E5003B4FB9A2BA249D /* CloseSelected.png */; };
 		80D29CD343824256B5E375A0 /* CCMeshCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 726819F55D2C4C33B36EBCD9 /* CCMeshCommand.cpp */; };
 		80D9C30259404C378D3EA23B /* CCOBB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB0CA58047B3429D93552515 /* CCOBB.cpp */; };
 		81781A84C99A4304A4DF4A87 /* CCTMXXMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F33D5E2288D946EFA7AF91A7 /* CCTMXXMLParser.cpp */; };
@@ -985,12 +982,10 @@
 		92093DBF57BC4E029FBC5282 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
+			dstPath = res/Sound;
 			dstSubfolderSpec = 7;
 			files = (
-				558CC502A01141D19745DA75 /* CloseNormal.png in CopyFiles */,
-				80B99776F5DA49C3A1A63B91 /* CloseSelected.png in CopyFiles */,
-				37FEEDFEA2F84D5FB78ED9DD /* HelloWorld.png in CopyFiles */,
+				054F880525E5F2AD00107C0F /* coin.mp3 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,7 +997,6 @@
 			files = (
 				054F871E25E58C2600107C0F /* point.png in CopyFiles */,
 				054F871F25E58C2600107C0F /* point1.png in CopyFiles */,
-				054F872025E58C2600107C0F /* point2.png in CopyFiles */,
 				059C66D425CCF5F5007B2AA0 /* circle.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1044,12 +1038,12 @@
 		054F86F825E54CC000107C0F /* GameBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameBridge.mm; sourceTree = "<group>"; };
 		054F870925E58B9000107C0F /* point1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point1.png; sourceTree = "<group>"; };
 		054F870A25E58B9000107C0F /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
-		054F870B25E58B9000107C0F /* point2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point2.png; sourceTree = "<group>"; };
 		054F873025E58D9700107C0F /* HomeScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HomeScene.cpp; sourceTree = "<group>"; };
 		054F873125E58D9700107C0F /* HomeScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
 		054F876F25E5A7B900107C0F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		054F87A425E5CD3700107C0F /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		054F87A525E5CD3700107C0F /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		054F87D525E5F19600107C0F /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
 		0571FD8C230B494F8AB6A132 /* CCActionCamera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCActionCamera.h; path = cocos2d/cocos/2d/CCActionCamera.h; sourceTree = SOURCE_ROOT; };
 		057252970E7741359CE886EF /* CCPUFlockCenteringAffector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUFlockCenteringAffector.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp; sourceTree = SOURCE_ROOT; };
 		05901E8325CBA1A000E57504 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -1170,7 +1164,6 @@
 		1CFC40103D3541588F6A6D4E /* GUIDefine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GUIDefine.h; path = cocos2d/cocos/ui/GUIDefine.h; sourceTree = SOURCE_ROOT; };
 		1CFCB61126694BF289D024AB /* ProjectNodeReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProjectNodeReader.cpp; path = "cocos2d/cocos/editor-support/cocostudio/WidgetReader/ProjectNodeReader/ProjectNodeReader.cpp"; sourceTree = SOURCE_ROOT; };
 		1D14835E5BF442A6890ABADE /* DictionaryHelper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DictionaryHelper.h; path = "cocos2d/cocos/editor-support/cocostudio/DictionaryHelper.h"; sourceTree = SOURCE_ROOT; };
-		1D2C336EE7AC4AADA954FA8F /* CloseNormal.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = CloseNormal.png; path = Resources/CloseNormal.png; sourceTree = SOURCE_ROOT; };
 		1D3227A437654185B1B23B56 /* DetourAlloc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourAlloc.cpp; path = cocos2d/external/recast/Detour/DetourAlloc.cpp; sourceTree = SOURCE_ROOT; };
 		1D4BC3B83BD54C90A98AD24B /* CCStencilStateManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCStencilStateManager.h; path = cocos2d/cocos/base/CCStencilStateManager.h; sourceTree = SOURCE_ROOT; };
 		1D63E0E17E21485EAC55C07D /* CCPhysicsContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPhysicsContact.cpp; path = cocos2d/cocos/physics/CCPhysicsContact.cpp; sourceTree = SOURCE_ROOT; };
@@ -1733,7 +1726,6 @@
 		9386E0CC5EF743D4B51EFF0B /* CCPURandomiser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPURandomiser.cpp; path = cocos2d/extensions/Particle3D/PU/CCPURandomiser.cpp; sourceTree = SOURCE_ROOT; };
 		938D280285CC458E979B8970 /* Vec4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vec4.h; path = cocos2d/cocos/math/Vec4.h; sourceTree = SOURCE_ROOT; };
 		93B4E54FC3AC4EC39DE67828 /* AudioEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioEngine.cpp; path = cocos2d/cocos/audio/AudioEngine.cpp; sourceTree = SOURCE_ROOT; };
-		93F7A216377B44A6B229DE10 /* HelloWorld.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = HelloWorld.png; path = Resources/HelloWorld.png; sourceTree = SOURCE_ROOT; };
 		943257EB53A74F5C900C13F2 /* CCPUDynamicAttribute.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUDynamicAttribute.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUDynamicAttribute.cpp; sourceTree = SOURCE_ROOT; };
 		945FD3E2833C408282D03045 /* CCGLViewImpl-ios.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = "CCGLViewImpl-ios.mm"; path = "cocos2d/cocos/platform/ios/CCGLViewImpl-ios.mm"; sourceTree = SOURCE_ROOT; };
 		9487A60A156A4A448154BBF1 /* CCPUBeamRender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUBeamRender.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUBeamRender.cpp; sourceTree = SOURCE_ROOT; };
@@ -2054,7 +2046,6 @@
 		D7A5C4E3EF2E4DD588401B73 /* CCPUBoxCollider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUBoxCollider.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUBoxCollider.cpp; sourceTree = SOURCE_ROOT; };
 		D8279603BDBC405598FE7032 /* CCPUBaseForceAffector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUBaseForceAffector.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUBaseForceAffector.cpp; sourceTree = SOURCE_ROOT; };
 		D83F43106FE44BF09F1EC3F4 /* CCPUParticleFollower.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCPUParticleFollower.h; path = cocos2d/extensions/Particle3D/PU/CCPUParticleFollower.h; sourceTree = SOURCE_ROOT; };
-		D84F64E5003B4FB9A2BA249D /* CloseSelected.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = CloseSelected.png; path = Resources/CloseSelected.png; sourceTree = SOURCE_ROOT; };
 		D87466D69DC4485A8A30417C /* Prefix.pch */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Prefix.pch; path = proj.ios_mac/ios/Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D880A844DD0F4B19BF0BF8EB /* CCDrawNode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCDrawNode.h; path = cocos2d/cocos/2d/CCDrawNode.h; sourceTree = SOURCE_ROOT; };
 		D892A2C5A0F74B5EBD52E7C9 /* UILoadingBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UILoadingBar.h; path = cocos2d/cocos/ui/UILoadingBar.h; sourceTree = SOURCE_ROOT; };
@@ -2382,6 +2373,14 @@
 			path = proj.ios_mac/ios/GameCenter;
 			sourceTree = "<group>";
 		};
+		054F87D425E5F19600107C0F /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				054F87D525E5F19600107C0F /* coin.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		05901E8225CBA1A000E57504 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2421,6 +2420,7 @@
 			isa = PBXGroup;
 			children = (
 				059C66B325CCF5A6007B2AA0 /* Image */,
+				054F87D425E5F19600107C0F /* Sound */,
 			);
 			name = res;
 			path = Resources/res;
@@ -2441,7 +2441,6 @@
 			children = (
 				054F870A25E58B9000107C0F /* point.png */,
 				054F870925E58B9000107C0F /* point1.png */,
-				054F870B25E58B9000107C0F /* point2.png */,
 				059C66B425CCF5A6007B2AA0 /* circle.png */,
 			);
 			path = Image;
@@ -3594,9 +3593,6 @@
 			children = (
 				059C667D25CCEADA007B2AA0 /* fonts */,
 				059C667A25CCEADA007B2AA0 /* res */,
-				1D2C336EE7AC4AADA954FA8F /* CloseNormal.png */,
-				D84F64E5003B4FB9A2BA249D /* CloseSelected.png */,
-				93F7A216377B44A6B229DE10 /* HelloWorld.png */,
 				804CAF95CC8B4BF984EAF9C9 /* Info.plist */,
 			);
 			name = Resources;
@@ -4813,9 +4809,9 @@
 			files = (
 				5E37F826579C4DBA96783A2C /* Images.xcassets in Resources */,
 				CD1FF9221D794D9EAA77D08E /* LaunchScreen.storyboard in Resources */,
+				054F87D625E5F19600107C0F /* coin.mp3 in Resources */,
 				059C668325CCEADA007B2AA0 /* Marker Felt.ttf in Resources */,
 				F7B46034B48A4F12976173E8 /* LaunchScreenBackground.png in Resources */,
-				054F870E25E58B9000107C0F /* point2.png in Resources */,
 				059C66B525CCF5A6007B2AA0 /* circle.png in Resources */,
 				054F870C25E58B9000107C0F /* point1.png in Resources */,
 				054F870D25E58B9000107C0F /* point.png in Resources */,

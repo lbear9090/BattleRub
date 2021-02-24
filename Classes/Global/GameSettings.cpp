@@ -8,6 +8,7 @@
 
 #include "GameSettings.h"
 #include "GameConfig.h"
+#include "audio/include/AudioEngine.h"
 float getX(int x)
 {
     float fx=0;
@@ -179,6 +180,7 @@ ParticleSystemQuad * showParticle(string filename, Node *target, Point pos, int 
 
 int playEffect(string sName, bool loop){
     if(g_bSoundOn){
+        return AudioEngine::play2d("res/Sound/" + sName);
         //return SimpleAudioEngine::getInstance()->playEffect(("res/" + sName).c_str(), loop);
     }
     return -1;

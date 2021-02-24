@@ -156,6 +156,7 @@ void MainScene::onTouchMoved(Touch *touch, Event *unused_event){
     }else{
         if(m_bTouchCircle && m_nTime > 0){
             m_nScore++;
+            playEffect("coin.mp3", false);
             m_lScore->setString(to_string(m_nScore));
             m_sCircle->setScale(G_SCALEO * 1.2 );
             m_sCircle->stopAllActions();
