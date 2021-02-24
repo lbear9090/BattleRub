@@ -66,6 +66,8 @@
 		054F871F25E58C2600107C0F /* point1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870925E58B9000107C0F /* point1.png */; };
 		054F872025E58C2600107C0F /* point2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F870B25E58B9000107C0F /* point2.png */; };
 		054F873225E58D9800107C0F /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 054F873025E58D9700107C0F /* HomeScene.cpp */; };
+		054F877025E5A7B900107C0F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F876F25E5A7B900107C0F /* GameKit.framework */; };
+		054F87A625E5CD3700107C0F /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F87A525E5CD3700107C0F /* GameCenterManager.m */; };
 		05901E8725CBA1A000E57504 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E8325CBA1A000E57504 /* AppDelegate.cpp */; };
 		05901E9C25CBA20100E57504 /* GameSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E9A25CBA20000E57504 /* GameSettings.cpp */; };
 		05901EBD25CBA22D00E57504 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901EBC25CBA22D00E57504 /* MainScene.cpp */; };
@@ -1045,6 +1047,9 @@
 		054F870B25E58B9000107C0F /* point2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point2.png; sourceTree = "<group>"; };
 		054F873025E58D9700107C0F /* HomeScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HomeScene.cpp; sourceTree = "<group>"; };
 		054F873125E58D9700107C0F /* HomeScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		054F876F25E5A7B900107C0F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		054F87A425E5CD3700107C0F /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		054F87A525E5CD3700107C0F /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		0571FD8C230B494F8AB6A132 /* CCActionCamera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCActionCamera.h; path = cocos2d/cocos/2d/CCActionCamera.h; sourceTree = SOURCE_ROOT; };
 		057252970E7741359CE886EF /* CCPUFlockCenteringAffector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUFlockCenteringAffector.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp; sourceTree = SOURCE_ROOT; };
 		05901E8325CBA1A000E57504 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -2334,6 +2339,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054F877025E5A7B900107C0F /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2364,6 +2370,16 @@
 				13B29265911B49D987DD1803 /* CCStdC.h */,
 			);
 			name = platform;
+			sourceTree = "<group>";
+		};
+		054F87A325E5CD3700107C0F /* GameCenter */ = {
+			isa = PBXGroup;
+			children = (
+				054F87A425E5CD3700107C0F /* GameCenterManager.h */,
+				054F87A525E5CD3700107C0F /* GameCenterManager.m */,
+			);
+			name = GameCenter;
+			path = proj.ios_mac/ios/GameCenter;
 			sourceTree = "<group>";
 		};
 		05901E8225CBA1A000E57504 /* Classes */ = {
@@ -2842,6 +2858,7 @@
 		27858857F30F4A0F98B25443 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				054F876F25E5A7B900107C0F /* GameKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3510,6 +3527,7 @@
 		9C6B7A569CF645D19195FBEE /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				054F87A325E5CD3700107C0F /* GameCenter */,
 				CAA1C75233A74474BFDA6A55 /* AppController.h */,
 				69749C6810664E13BBA09757 /* AppController.mm */,
 				18E1AF05823A47678B6EB52D /* Images.xcassets */,
@@ -5476,6 +5494,7 @@
 				0C974195DF1C4A2EAEF1750E /* RootViewController.mm in Sources */,
 				05901EBD25CBA22D00E57504 /* MainScene.cpp in Sources */,
 				054F86F925E54CC000107C0F /* GameBridge.mm in Sources */,
+				054F87A625E5CD3700107C0F /* GameCenterManager.m in Sources */,
 				05901E9C25CBA20100E57504 /* GameSettings.cpp in Sources */,
 				AE164512BF7F461D9EB06DF0 /* main.m in Sources */,
 				05901ECF25CBA2C700E57504 /* GameConfig.cpp in Sources */,

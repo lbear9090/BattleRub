@@ -86,9 +86,14 @@ static AppDelegate s_sharedApplication;
     //run the cocos2d-x game scene
     app->run();
 
+    [self initGameCenter];
     return YES;
 }
 
++ (AppController *) get
+{
+    return (AppController*) [[UIApplication sharedApplication] delegate];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -149,5 +154,91 @@ static AppDelegate s_sharedApplication;
 }
 #endif
 
+#pragma mark -
+#pragma Game Center
 
+- (BOOL)initGameCenter {
+    
+    if(self.gameCenterManager != nil)
+        return NO;
+    self.currentLeaderBoard = LEADERBOARD_ID;
+    if ([GameCenterManager isGameCenterAvailable])
+    {
+        self.gameCenterManager = [[[GameCenterManager alloc] init] autorelease];
+        [self.gameCenterManager setDelegate:self];
+        [self.gameCenterManager authenticateLocalUser];
+        return YES;
+    }
+    else
+    {
+        NSString *message = @"This IOS version is not available Game Center.";
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message!" message:message delegate:self cancelButtonTitle:@"YES" otherButtonTitles: nil];
+        alert.tag = 1;
+        [alert show];
+        [alert release];
+    }
+    
+    return NO;
+}
+
+#pragma mark GameKit delegate
+- (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController{
+    [self.viewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma makr GameCenterManager protocol
+
+- (void) scoreReported: (NSError*) error
+{
+    NSString *message = @"Score submited succesfully to Game Center.";
+    //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!" message:message delegate:self cancelButtonTitle:@"YES" otherButtonTitles: nil];
+    //    alert.tag = 1;
+    //    [alert show];
+    //    [alert release];
+    NSLog(@"%@", message);
+}
+
+- (void) processGameCenterAuth: (NSError*) error
+{
+    if (error == NULL) {
+        NSLog(@"Game Center Auth success!");
+    }
+    else {
+        NSLog(@"Game Center Auth faild!");
+    }
+}
+
+- (void) reloadScoresComplete: (GKLeaderboard*) leaderBoard error: (NSError*) error
+{
+    if (error == NULL) {
+        NSLog(@"Game Center reload socores success!");
+    }
+    else {
+        NSLog(@"Game Center reload socores faild!");
+    }
+}
+
+-(void) showLeaderboard{
+    GKGameCenterViewController *gamecenterViewController = [[GKGameCenterViewController alloc] init];
+    if (gamecenterViewController != NULL) {
+        gamecenterViewController.leaderboardIdentifier = self.currentLeaderBoard;
+        gamecenterViewController.leaderboardTimeScope = GKLeaderboardTimeScopeAllTime;
+        gamecenterViewController.gameCenterDelegate = self;
+        
+        [self.viewController presentViewController:gamecenterViewController animated:YES completion:nil];
+        
+    }
+
+}
+
+-(void) submitScore:(int) score{
+    if( score > 0){
+        
+        if ([GameCenterManager isGameCenterAvailable]) {
+            [self.gameCenterManager reportScore:score  forCategory: self.currentLeaderBoard];
+            [self.gameCenterManager reloadHighScoresForCategory:self.currentLeaderBoard];
+        }
+    }
+
+}
 @end

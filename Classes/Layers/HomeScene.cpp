@@ -9,6 +9,8 @@
 #include "HomeScene.h"
 #include "GameSettings.h"
 #include "MainScene.h"
+#include "GameBridge.h"
+#include "GameConfig.h"
 //#include "GameScene.h"
 //#include "SettingScene.h"
 
@@ -77,5 +79,8 @@ void HomeScene::onMenu(Ref *sender)
 {
     if(((MenuItemLabel *)sender)->getTag() == 100){
         Director::getInstance()->replaceScene(TransitionCrossFade::create(0.5f, MainScene::createScene()));
+    }else if(((MenuItemLabel *)sender)->getTag() == 101){
+        GameBridge::submitScore(g_nHighScore);
+        GameBridge::showLeaderboard();
     }
 }

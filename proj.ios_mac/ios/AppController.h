@@ -25,14 +25,21 @@
  ****************************************************************************/
 
 #import <UIKit/UIKit.h>
+#import "GameCenter/GameCenterManager.h"
+#import <GameKit/GameKit.h>
+#define LEADERBOARD_ID              @"com.denaro.BattleRub.leaderboard"
 
 @class RootViewController;
 
-@interface AppController : NSObject <UIApplicationDelegate> {
+@interface AppController : NSObject <UIApplicationDelegate, GKGameCenterControllerDelegate, GameCenterManagerDelegate> {
 
 }
 
 @property(nonatomic, readonly) RootViewController* viewController;
-
+@property (nonatomic, retain) GameCenterManager *gameCenterManager;
+@property (nonatomic, retain) NSString* currentLeaderBoard;
+-(void) showLeaderboard;
+-(void) submitScore:(int) score;
++(AppController*) get;
 @end
 

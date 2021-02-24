@@ -20,11 +20,12 @@ void loadGameInfo(){
     
 //    SimpleAudioEngine::getInstance()->setBackgroundMusicVolume(1.0);
 //    SimpleAudioEngine::getInstance()->setEffectsVolume(1.0);
-    
+    g_nHighScore = UserDefault::getInstance()->getIntegerForKey("HighScore",g_nHighScore);
 }
 
 void saveGameInfo(){
-   
+    
+    UserDefault::getInstance()->setIntegerForKey("HighScore", g_nHighScore);
 }
 
 int getCurrentTime(){

@@ -24,7 +24,7 @@
 
 #include "AppDelegate.h"
 #include "HomeScene.h"
-
+#include "Global/GameConfig.h"
 // #define USE_AUDIO_ENGINE 1
 
 #if USE_AUDIO_ENGINE
@@ -112,7 +112,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
-
+    
+    loadGameInfo();
     return true;
 }
 

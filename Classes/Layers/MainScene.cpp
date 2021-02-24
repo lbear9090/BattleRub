@@ -9,7 +9,8 @@
 #include "MainScene.h"
 #include "HomeScene.h"
 #include "GameSettings.h"
-
+#include "GameConfig.h"
+#include "GameBridge.h"
 //#include "GameScene.h"
 //#include "SettingScene.h"
 
@@ -127,6 +128,11 @@ void MainScene::onTimer(float dt){
         m_lTime->setString(to_string(m_nTime));
     }else{
         m_mMain->setVisible(true);
+        if(m_nScore > g_nHighScore){
+            g_nHighScore = m_nScore;
+            saveGameInfo();
+            GameBridge::submitScore(g_nHighScore);
+        }
         unscheduleAllCallbacks();
     }
 }
