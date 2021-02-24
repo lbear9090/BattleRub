@@ -68,6 +68,13 @@
 		054F87A625E5CD3700107C0F /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F87A525E5CD3700107C0F /* GameCenterManager.m */; };
 		054F87D625E5F19600107C0F /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 054F87D525E5F19600107C0F /* coin.mp3 */; };
 		054F880525E5F2AD00107C0F /* coin.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054F87D525E5F19600107C0F /* coin.mp3 */; };
+		054F897425E6C0BC00107C0F /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F896E25E6C0BB00107C0F /* GoogleUtilities.framework */; };
+		054F897525E6C0BC00107C0F /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F896F25E6C0BB00107C0F /* GoogleAppMeasurement.framework */; };
+		054F897625E6C0BC00107C0F /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F897025E6C0BC00107C0F /* nanopb.framework */; };
+		054F897725E6C0BC00107C0F /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F897125E6C0BC00107C0F /* UserMessagingPlatform.framework */; };
+		054F897825E6C0BC00107C0F /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F897225E6C0BC00107C0F /* PromisesObjC.framework */; };
+		054F897925E6C0BC00107C0F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F897325E6C0BC00107C0F /* GoogleMobileAds.framework */; };
+		054F89D525E6C4B900107C0F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F89D425E6C4B900107C0F /* JavaScriptCore.framework */; };
 		05901E8725CBA1A000E57504 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E8325CBA1A000E57504 /* AppDelegate.cpp */; };
 		05901E9C25CBA20100E57504 /* GameSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901E9A25CBA20000E57504 /* GameSettings.cpp */; };
 		05901EBD25CBA22D00E57504 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05901EBC25CBA22D00E57504 /* MainScene.cpp */; };
@@ -619,7 +626,6 @@
 		F3AFB2DCC9C94A1AA1FBCB84 /* CCConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E7740101D54ACABCAA6BEA /* CCConfiguration.cpp */; };
 		F5A99E5B094B4A25A76424BE /* CCPUBoxEmitterTranslator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02F3279F6F104C28A9C2DC3E /* CCPUBoxEmitterTranslator.cpp */; };
 		F73733491D8340D8B0E07AC2 /* CCTexture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0CEEA397F2B4D63A6847863 /* CCTexture2D.cpp */; };
-		F7B46034B48A4F12976173E8 /* LaunchScreenBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 602CB9DA5BAB4F938477A779 /* LaunchScreenBackground.png */; };
 		F8688983599245E39119613D /* CCPUTranslateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFE4C006C92E4E21AFE6256A /* CCPUTranslateManager.cpp */; };
 		F8A1AB9CC7D74F10A2872E82 /* CCArmatureAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105371EC05624D488ED3CD21 /* CCArmatureAnimation.cpp */; };
 		F8BFC372C14A4EDE8225D88E /* DetourAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D3227A437654185B1B23B56 /* DetourAlloc.cpp */; };
@@ -1044,6 +1050,13 @@
 		054F87A425E5CD3700107C0F /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		054F87A525E5CD3700107C0F /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		054F87D525E5F19600107C0F /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
+		054F896E25E6C0BB00107C0F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		054F896F25E6C0BB00107C0F /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		054F897025E6C0BC00107C0F /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		054F897125E6C0BC00107C0F /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
+		054F897225E6C0BC00107C0F /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		054F897325E6C0BC00107C0F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		054F89D425E6C4B900107C0F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		0571FD8C230B494F8AB6A132 /* CCActionCamera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCActionCamera.h; path = cocos2d/cocos/2d/CCActionCamera.h; sourceTree = SOURCE_ROOT; };
 		057252970E7741359CE886EF /* CCPUFlockCenteringAffector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUFlockCenteringAffector.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp; sourceTree = SOURCE_ROOT; };
 		05901E8325CBA1A000E57504 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -1486,7 +1499,6 @@
 		5FB538D985484793BDB16220 /* CCPUUtil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCPUUtil.h; path = cocos2d/extensions/Particle3D/PU/CCPUUtil.h; sourceTree = SOURCE_ROOT; };
 		600401E69C044880874DB0F0 /* UIEditBoxImpl-ios.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "UIEditBoxImpl-ios.h"; path = "cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-ios.h"; sourceTree = SOURCE_ROOT; };
 		601673A478B8431DBF23BB77 /* CCLabelTextFormatter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCLabelTextFormatter.cpp; path = cocos2d/cocos/2d/CCLabelTextFormatter.cpp; sourceTree = SOURCE_ROOT; };
-		602CB9DA5BAB4F938477A779 /* LaunchScreenBackground.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = LaunchScreenBackground.png; path = proj.ios_mac/ios/LaunchScreenBackground.png; sourceTree = SOURCE_ROOT; };
 		603BB2E310364144927CB76C /* CCActionProgressTimer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCActionProgressTimer.h; path = cocos2d/cocos/2d/CCActionProgressTimer.h; sourceTree = SOURCE_ROOT; };
 		60B1E5D01FFA495F8331529C /* TabControlReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TabControlReader.cpp; path = "cocos2d/cocos/editor-support/cocostudio/WidgetReader/TabControlReader/TabControlReader.cpp"; sourceTree = SOURCE_ROOT; };
 		60ECD07C259E45EA9AC51478 /* CCPhysics3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPhysics3D.cpp; path = cocos2d/cocos/physics3d/CCPhysics3D.cpp; sourceTree = SOURCE_ROOT; };
@@ -2330,7 +2342,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054F897425E6C0BC00107C0F /* GoogleUtilities.framework in Frameworks */,
 				054F877025E5A7B900107C0F /* GameKit.framework in Frameworks */,
+				054F897825E6C0BC00107C0F /* PromisesObjC.framework in Frameworks */,
+				054F897725E6C0BC00107C0F /* UserMessagingPlatform.framework in Frameworks */,
+				054F89D525E6C4B900107C0F /* JavaScriptCore.framework in Frameworks */,
+				054F897625E6C0BC00107C0F /* nanopb.framework in Frameworks */,
+				054F897925E6C0BC00107C0F /* GoogleMobileAds.framework in Frameworks */,
+				054F897525E6C0BC00107C0F /* GoogleAppMeasurement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2379,6 +2398,20 @@
 				054F87D525E5F19600107C0F /* coin.mp3 */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		054F895225E6C04900107C0F /* GAD */ = {
+			isa = PBXGroup;
+			children = (
+				054F896F25E6C0BB00107C0F /* GoogleAppMeasurement.framework */,
+				054F897325E6C0BC00107C0F /* GoogleMobileAds.framework */,
+				054F896E25E6C0BB00107C0F /* GoogleUtilities.framework */,
+				054F897025E6C0BC00107C0F /* nanopb.framework */,
+				054F897225E6C0BC00107C0F /* PromisesObjC.framework */,
+				054F897125E6C0BC00107C0F /* UserMessagingPlatform.framework */,
+			);
+			name = GAD;
+			path = proj.ios_mac/ios/GAD;
 			sourceTree = "<group>";
 		};
 		05901E8225CBA1A000E57504 /* Classes */ = {
@@ -2857,6 +2890,7 @@
 		27858857F30F4A0F98B25443 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				054F89D425E6C4B900107C0F /* JavaScriptCore.framework */,
 				054F876F25E5A7B900107C0F /* GameKit.framework */,
 			);
 			name = Frameworks;
@@ -3526,12 +3560,12 @@
 		9C6B7A569CF645D19195FBEE /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				054F895225E6C04900107C0F /* GAD */,
 				054F87A325E5CD3700107C0F /* GameCenter */,
 				CAA1C75233A74474BFDA6A55 /* AppController.h */,
 				69749C6810664E13BBA09757 /* AppController.mm */,
 				18E1AF05823A47678B6EB52D /* Images.xcassets */,
 				496295DDEFB2461CBC8C0AD3 /* LaunchScreen.storyboard */,
-				602CB9DA5BAB4F938477A779 /* LaunchScreenBackground.png */,
 				D87466D69DC4485A8A30417C /* Prefix.pch */,
 				E2A57595379343E59BAC8EE7 /* RootViewController.h */,
 				A73F2F4C77E84430A4C1B56A /* RootViewController.mm */,
@@ -4811,7 +4845,6 @@
 				CD1FF9221D794D9EAA77D08E /* LaunchScreen.storyboard in Resources */,
 				054F87D625E5F19600107C0F /* coin.mp3 in Resources */,
 				059C668325CCEADA007B2AA0 /* Marker Felt.ttf in Resources */,
-				F7B46034B48A4F12976173E8 /* LaunchScreenBackground.png in Resources */,
 				059C66B525CCF5A6007B2AA0 /* circle.png in Resources */,
 				054F870C25E58B9000107C0F /* point1.png in Resources */,
 				054F870D25E58B9000107C0F /* point.png in Resources */,
@@ -6244,7 +6277,7 @@
 		2A188F409DF74738A40D103C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SYMROOT = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/build;
@@ -6407,7 +6440,7 @@
 		355BC2B76F4B421A843E9860 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SYMROOT = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/build;
@@ -6887,7 +6920,10 @@
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/proj.ios_mac/ios/GAD",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -7034,6 +7070,7 @@
 					Metal,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libz.tbd,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libiconv.tbd,
+					"-ObjC",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.denaro.BattleRub;
@@ -7323,7 +7360,10 @@
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/proj.ios_mac/ios/GAD",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -7470,6 +7510,7 @@
 					Metal,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libz.tbd,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libiconv.tbd,
+					"-ObjC",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.denaro.BattleRub;
@@ -7586,7 +7627,7 @@
 		BD2B95BC3A3643B88E5008F7 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SYMROOT = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/build;
@@ -7665,7 +7706,10 @@
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/proj.ios_mac/ios/GAD",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
@@ -7812,6 +7856,7 @@
 					Metal,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libz.tbd,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libiconv.tbd,
+					"-ObjC",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.denaro.BattleRub;
@@ -8049,7 +8094,10 @@
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/proj.ios_mac/ios/GAD",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -8191,6 +8239,7 @@
 					Metal,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libz.tbd,
 					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libiconv.tbd,
+					"-ObjC",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.denaro.BattleRub;
@@ -8220,7 +8269,7 @@
 		DCA1D7C395C24010A16C76A8 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SYMROOT = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/build;

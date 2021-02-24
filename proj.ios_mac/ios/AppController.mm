@@ -28,6 +28,12 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+
+@interface AppController()
+@property(nonatomic, strong) GADBannerView *bannerView;
+@property(nonatomic, strong) GADInterstitialAd *interstitial;
+@end
 
 @implementation AppController
 
@@ -56,7 +62,8 @@ static AppDelegate s_sharedApplication;
     _viewController = [[RootViewController alloc]init];
     _viewController.wantsFullScreenLayout = YES;
     
-
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+    
     // Set RootViewController to window
     if ( [[UIDevice currentDevice].systemVersion floatValue] < 6.0)
     {
@@ -85,12 +92,63 @@ static AppDelegate s_sharedApplication;
     
     //run the cocos2d-x game scene
     app->run();
-
+    
     [self initGameCenter];
+    
+    [self initInterstitial];
+    
+    self.bannerView = [[GADBannerView alloc]
+          initWithAdSize:kGADAdSizeBanner];
+
+    [self addBannerViewToView:self.bannerView];
+    self.bannerView.adUnitID = @"ca-app-pub-9122663021704821/5333302675";
+    self.bannerView.rootViewController = self.viewController;
+    [self.bannerView loadRequest:[GADRequest request]];
     return YES;
 }
 
-+ (AppController *) get
+- (void)addBannerViewToView:(UIView *)bannerView {
+    bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.viewController.view addSubview:bannerView];
+    [self.viewController.view addConstraints:@[
+    [NSLayoutConstraint constraintWithItem:bannerView
+                               attribute:NSLayoutAttributeBottom
+                               relatedBy:NSLayoutRelationEqual
+                                  toItem:self.viewController.bottomLayoutGuide
+                               attribute:NSLayoutAttributeTop
+                              multiplier:1
+                                constant:0],
+    [NSLayoutConstraint constraintWithItem:bannerView
+                               attribute:NSLayoutAttributeCenterX
+                               relatedBy:NSLayoutRelationEqual
+                                  toItem:self.viewController.view
+                               attribute:NSLayoutAttributeCenterX
+                              multiplier:1
+                                constant:0]
+                                ]];
+}
+
+- (void)initInterstitial{
+    GADRequest *request = [GADRequest request];
+    [GADInterstitialAd loadWithAdUnitID:@"ca-app-pub-9122663021704821/2011529986"
+                                request:request
+                      completionHandler:^(GADInterstitialAd *ad, NSError *error) {
+        if (error) {
+            NSLog(@"Failed to load interstitial ad with error: %@", [error localizedDescription]);
+            return;
+        }
+        self.interstitial = ad;
+        }];        }
+
+-(void)showInterstitial{
+    if (self.interstitial) {
+        [self.interstitial presentFromRootViewController:self.viewController];
+    } else {
+        NSLog(@"Ad wasn't ready");
+    }
+}
+
++ (AppController *) get6
 {
     return (AppController*) [[UIApplication sharedApplication] delegate];
 }

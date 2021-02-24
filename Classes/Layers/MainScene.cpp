@@ -133,6 +133,7 @@ void MainScene::onTimer(float dt){
             saveGameInfo();
             GameBridge::submitScore(g_nHighScore);
         }
+        GameBridge::showInterstitial();
         unscheduleAllCallbacks();
     }
 }

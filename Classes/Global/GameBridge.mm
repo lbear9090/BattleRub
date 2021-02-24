@@ -10,10 +10,14 @@
 #import "AppController.h"
 //#import "MKStoreManager.h"
 
+void GameBridge::showInterstitial(){
+    AppController* delegate=(AppController*)[[UIApplication sharedApplication] delegate];
+    [delegate showInterstitial];
+}
+
 void GameBridge::showLeaderboard(){
     AppController* delegate=(AppController*)[[UIApplication sharedApplication] delegate];
     [delegate showLeaderboard];
-    
 }
 void GameBridge::submitScore(int score){
     AppController* delegate=(AppController*)[[UIApplication sharedApplication] delegate];

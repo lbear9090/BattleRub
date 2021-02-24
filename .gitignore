@@ -7,3 +7,5 @@ proj.ios_mac/ios/BattleRub.build
 cocos2d
 proj.ios_mac/ios/BattleRub.xcodeproj/project.xcworkspace/xcuserdata
 proj.ios_mac/ios/BattleRub.xcodeproj/xcuserdata
+proj.ios_mac/ios/Pods
+proj.ios_mac/ios/BattleRub.xcworkspace/xcuserdata
