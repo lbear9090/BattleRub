@@ -38,7 +38,7 @@
 @property(nonatomic, readonly) RootViewController* viewController;
 @property (nonatomic, retain) GameCenterManager *gameCenterManager;
 @property (nonatomic, retain) NSString* currentLeaderBoard;
--(void) showInterstitial;
+-(BOOL) showInterstitial;
 -(void) showLeaderboard;
 -(void) submitScore:(int) score;
 +(AppController*) get;

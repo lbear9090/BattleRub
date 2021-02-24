@@ -138,13 +138,16 @@ static AppDelegate s_sharedApplication;
             return;
         }
         self.interstitial = ad;
-        }];        }
+    }];
+}
 
--(void)showInterstitial{
+-(BOOL)showInterstitial{
     if (self.interstitial) {
         [self.interstitial presentFromRootViewController:self.viewController];
+        return true;
     } else {
         NSLog(@"Ad wasn't ready");
+        return false;
     }
 }
 

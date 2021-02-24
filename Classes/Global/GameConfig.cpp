@@ -12,6 +12,7 @@ bool g_bSoundOn = true;
 
 int g_nScore = 0;
 int g_nHighScore = 0;
+bool g_bShownAD = false;
 
 Layer *g_layerGame = NULL;
 

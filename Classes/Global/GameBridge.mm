@@ -10,9 +10,9 @@
 #import "AppController.h"
 //#import "MKStoreManager.h"
 
-void GameBridge::showInterstitial(){
+bool GameBridge::showInterstitial(){
     AppController* delegate=(AppController*)[[UIApplication sharedApplication] delegate];
-    [delegate showInterstitial];
+    return [delegate showInterstitial];
 }
 
 void GameBridge::showLeaderboard(){

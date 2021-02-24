@@ -19,7 +19,7 @@ using namespace StringUtils;
 extern bool g_bSoundOn;
 extern int g_nScore;
 extern int g_nHighScore;
-
+extern bool g_bShownAD;
 extern Layer *g_layerGame;
 
 void loadGameInfo();

@@ -12,7 +12,7 @@
 class GameBridge {
     
 public:
-    static void showInterstitial();
+    static bool showInterstitial();
     static void showLeaderboard();
     static void submitScore(int score);
     
