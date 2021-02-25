@@ -6959,7 +6959,7 @@
 					/Volumes/WORK/Dev/MichaelD/BattleRub/cocos2d/external/unzip/.,
 				);
 				INFOPLIST_FILE = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/Info.plist;
-				INSTALL_PATH = "";
+				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -7399,7 +7399,7 @@
 					/Volumes/WORK/Dev/MichaelD/BattleRub/cocos2d/external/unzip/.,
 				);
 				INFOPLIST_FILE = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/Info.plist;
-				INSTALL_PATH = "";
+				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -7745,7 +7745,7 @@
 					/Volumes/WORK/Dev/MichaelD/BattleRub/cocos2d/external/unzip/.,
 				);
 				INFOPLIST_FILE = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/Info.plist;
-				INSTALL_PATH = "";
+				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -8134,7 +8134,7 @@
 					/Volumes/WORK/Dev/MichaelD/BattleRub/cocos2d/external/unzip/.,
 				);
 				INFOPLIST_FILE = /Volumes/WORK/Dev/MichaelD/BattleRub/proj.ios_mac/ios/Info.plist;
-				INSTALL_PATH = "";
+				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "   '-std=gnu99' ";

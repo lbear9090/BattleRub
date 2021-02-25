@@ -27,3 +27,15 @@ list(...
 
 cmake ../.. -GXcode -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_OSX_SYSROOT=iphoneos
 sudo xcode-select --reset
+
+--
+
+- GoogleAds compile issue
+    Add JavaScriptCore.framework
+- Archive issue
+    Solution1:
+    Set Build Settings->Installation Directory to /Applications
+
+    Solution 2:
+    add this line to cmake file_:
+    set_target_properties(${APP_NAME} PROPERTIES XCODE_ATTRIBUTE_INSTALL_PATH "/Applications")
