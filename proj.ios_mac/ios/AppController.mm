@@ -96,7 +96,7 @@ static AppDelegate s_sharedApplication;
     [self initGameCenter];
     
     [self initInterstitial];
-    
+//    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[ @"7cb504eac868d725ef6512309534272e" ];
     self.bannerView = [[GADBannerView alloc]
           initWithAdSize:kGADAdSizeBanner];
 
